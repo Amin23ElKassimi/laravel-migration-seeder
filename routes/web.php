@@ -2,7 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 // Diciamo al file.php dove trovare la Classe PageController
-use App\Http\Controllers\Admin\TrainDepartureController as TrainDepartureController;
+use App\Http\Controllers\Admin\TrainDepartureController as GuestTrainDepartureController;
 
 /*
 |--------------------------------------------------------------------------
@@ -15,5 +15,5 @@ use App\Http\Controllers\Admin\TrainDepartureController as TrainDepartureControl
 |
 */
 
-Route::get('/', [AdminMovieController::class, 'index']);
+Route::get('/', [GuestTrainDepartureController::class, 'index']);
 
