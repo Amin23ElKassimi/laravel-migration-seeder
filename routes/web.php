@@ -2,7 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 // Diciamo al file.php dove trovare la Classe PageController
-use App\Http\Controllers\Admin\TrainDepartureController as GuestTrainDepartureController;
+use App\Http\Controllers\Guest\TrainDepartureController as GuestTrainDepartureController;
 
 /*
 |--------------------------------------------------------------------------
