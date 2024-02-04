@@ -18,7 +18,7 @@ return new class extends Migration
             $table->string('arrival_station');
             $table->timestamp('departure_time')->nullable();
             $table->timestamp('arrival_time')->nullable();
-            $table->string('train_code');
+            $table->string('train_code')->nullable();
             $table->integer('number_of_carriages');
             $table->boolean('on_time')->default(true);
             $table->boolean('canceled')->default(false);
