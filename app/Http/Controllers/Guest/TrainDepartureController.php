@@ -12,9 +12,8 @@ class TrainDepartureController extends Controller
     //All’interno della funzione index() del controller, recuperate tutti i dati che riguardano le partenze dal database 
     public function index( ){
 
-        $trains = [];
-        // var_dump($trains);
-        return view('guest.trains.index',['trains'=>$trains]);
+        $trains = Train::all();
+        return view('guest.trains.index', compact('trains'));
 
     }
 }
