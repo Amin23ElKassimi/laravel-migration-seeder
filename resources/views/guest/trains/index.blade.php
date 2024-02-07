@@ -8,13 +8,13 @@
     @forelse ($trains as $train)
         <li>
             <h5>
-                {{ $train->company }}: From {{ $train->departing_station }} to {{ $train->arriving_station }}
+                {{ $train->company }}: From {{ $train->departure_station }} to {{ $train->arrival_station }}
             </h5>
             <p>
-                {{ $train->departing_time }} -> {{ $train->arriving_time }}
-                {{ $train->train_code }}, wagons: {{ $train->wagons_no }},
+                {{ $train->departure_time }} -> {{ $train->arrival_time }}
+                {{ $train->train_code }}, wagons: {{ $train->number_of_carriages }},
                 {{ ($train->on_time) ? 'on time' : 'delayed' }},
-                {{ ($train->cancelled) ? 'CANCELLED' : '' }}
+                {{ ($train->canceled) ? 'CANCELLED' : '' }}
             </p>
         </li>
     @empty
